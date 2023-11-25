@@ -1,0 +1,6 @@
+
+†
+java:S1319#"dThe type of "list" should be an interface such as "List" rather than the implementation "ArrayList".(½äÇêûÿÿÿÿ8› Â¾1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ï‰¼æøÿÿÿÿ8 Â¾1
+O
+java:S14818"-Remove this unused "activity" local variable.(“è·Øøÿÿÿÿ8Ì Â¾1

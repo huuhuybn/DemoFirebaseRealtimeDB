@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context=".Fragment.FraThongKe.thongkeThang">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biểu đồ xuất nhập 4 tháng gần đây"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/line_chart"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biểu đồ doanh thu 4 tháng gần đây"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Bảng thống kê chi tiết"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25dp"
+                    android:text="Từ tháng"
+                    />
+                <EditText
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:cursorVisible="false"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:id="@+id/edtngaybd"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25dp"
+                    android:text="Đến tháng"
+                    />
+                <EditText
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:cursorVisible="false"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:id="@+id/edtngaykt"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:text="Thống kê tất cả tháng"
+                    android:id="@+id/btnTatCaNgay"/>
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:layout_height="60dp"
+                    android:text="Thống kê 1 tháng"
+                    android:id="@+id/btn1Ngay"/>
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:layout_height="60dp"
+                    android:text="Thống kê theo khoảng"
+                    android:id="@+id/btnkhoang"/>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow   android:background="@drawable/boder">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="Tháng"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        />
+                    <TextView
+                        android:background="@drawable/boder"
+                        android:padding="10dp"
+                        android:text="Nhập kho"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:background="@drawable/boder"
+                        android:padding="10dp"
+                        android:text="Xuất kho"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:background="@drawable/boder"
+                        android:padding="10dp"
+                        android:text="Doanh thu"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        />
+                </TableRow>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:id="@+id/recycler_view"
+                    android:layout_gravity="center"/>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

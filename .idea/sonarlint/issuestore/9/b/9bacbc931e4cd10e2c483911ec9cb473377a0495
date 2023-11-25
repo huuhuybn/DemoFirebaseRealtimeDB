@@ -1,0 +1,13 @@
+
+
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¬ì÷8üÒŠÒ»1
+’
+java:S1319+"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Úîìáûÿÿÿÿ8ıÒŠÒ»1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(àŸŸ¹8şÒŠÒ»1
+T
+java:S6126"2Replace this String concatenation with Text block.(šš¾£ûÿÿÿÿ8’ÓŠÒ»1
+N
+java:S6126-"2Replace this String concatenation with Text block.(ğÜ«\8“ÓŠÒ»1
+c
+java:S1128
+"ARemove this unused import 'com.example.quanlykhohang.model.Bill'.(Éáğœşÿÿÿÿ8Ú‚Ò»1

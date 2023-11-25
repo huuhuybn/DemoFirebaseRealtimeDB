@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FraPhieuNhap.phieunhapchitiet">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow   android:background="@drawable/boder">
+            <TextView
+                android:padding="10dp"
+                android:text="Sản phảm"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:background="@drawable/boder"
+                android:padding="10dp"
+                android:text="Số lượng"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:background="@drawable/boder"
+                android:padding="10dp"
+                android:text="Giá nhập"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </TableLayout>
+</FrameLayout>

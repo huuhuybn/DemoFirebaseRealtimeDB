@@ -1,0 +1,7 @@
+
+’
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ùâŠ£øÿÿÿÿ8´ÿİ³¹1
+
+java:S1319("pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ë‰ÿç8´ÿİ³¹1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ˆÒïÏıÿÿÿÿ8µÿİ³¹1
+]	java:S107h"<Method has 9 parameters, which is greater than 7 authorized.(†ü”åÿÿÿÿÿ8Ãÿİ³¹1

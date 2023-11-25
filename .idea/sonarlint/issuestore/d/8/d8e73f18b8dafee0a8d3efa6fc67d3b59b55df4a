@@ -1,0 +1,6 @@
+
+’
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(û¨œ­øÿÿÿÿ8óŽñà¹1
+’
+java:S1319%"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¥Ä”Øùÿÿÿÿ8‹ó‚ÿ¹1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Üâº¡üÿÿÿÿ8óŽñà¹1
